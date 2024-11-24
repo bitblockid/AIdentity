@@ -1,9 +1,12 @@
 {
-  "name": "openaid-frontend",
+  "name": "openaid",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "truffle": "^5.5.0",
+    "web3": "^1.8.0"
+  },
+  "scripts": {
+    "test": "truffle test"
   }
 }
