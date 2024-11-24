@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "web3": "^1.8.0"
   }
 }
