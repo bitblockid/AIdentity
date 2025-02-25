@@ -1,5 +1,5 @@
-const OpenAIDRegistry = artifacts.require("OpenAIDRegistry");
+const AIdentityRegistry = artifacts.require("AIdentityRegistry");
 
 module.exports = function (deployer) {
-    deployer.deploy(OpenAIDRegistry);
+    deployer.deploy(AIdentityRegistry);
 };
