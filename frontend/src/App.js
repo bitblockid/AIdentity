@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Web3 from "web3";
-import OpenAIDRegistry from "./contracts/OpenAIDRegistry.json";
+import AIdentityRegistry from "./contracts/AIdentityRegistry.json";
 
 function App() {
     const [account, setAccount] = useState("");
@@ -19,8 +19,8 @@ function App() {
             const accounts = await web3.eth.requestAccounts();
             setAccount(accounts[0]);
             const networkId = await web3.eth.net.getId();
-            const deployedNetwork = OpenAIDRegistry.networks[networkId];
-            const instance = new web3.eth.Contract(OpenAIDRegistry.abi, deployedNetwork.address);
+            const deployedNetwork = AIdentityRegistry.networks[networkId];
+            const instance = new web3.eth.Contract(AIdentityRegistry.abi, deployedNetwork.address);
             setContract(instance);
         } else {
             alert("Please install MetaMask to interact with this application.");
@@ -47,7 +47,7 @@ function App() {
 
     return (
         <div>
-            <h1>OpenAID Frontend</h1>
+            <h1>AIdentity Frontend</h1>
             <p>Connected Account: {account}</p>
             <div>
                 <h2>Register Model</h2>
