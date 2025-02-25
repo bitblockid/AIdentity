@@ -1,5 +1,5 @@
 const Web3 = require("web3");
-const contract = require("./build/contracts/OpenAIDRegistry.json");
+const contract = require("./build/contracts/AIdentityRegistry.json");
 
 async function registerModel(modelId, attributes) {
     const web3 = new Web3("http://localhost:8545");
